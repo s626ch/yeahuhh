@@ -508,7 +508,7 @@ html:not(.platform-win) .toolbar-1t6TWx{
 
 .platform-win .maximized [aria-label="Maximize"]:before {
     content: " ";
-    -webkit-mask: url('https://kckarnige.github.io/improved-ui/res/restore.svg');
+    -webkit-mask: url('https://raw.githack.com/kckarnige/improved-ui/master/res/restore.svg');
     background-repeat: no-repeat;
     position: fixed;
     color: var(--interactive-normal);
