@@ -1,0 +1,519 @@
+/* Other Imports */
+@import url("https://raw.githack.com/v-briese/Channel-Icons/main/channelicons.theme.css");
+@import url("https://therealgwjosh.github.io/AddonPackPlus/src/Addons/Member-List.css");
+@import url("https://xn--48je0dr2kp99y.xn--q9jyb4c/ss/balls.css");
+@import url("https://xn--48je0dr2kp99y.xn--q9jyb4c/ss/balls2.css");
+@import url("https://xn--48je0dr2kp99y.xn--q9jyb4c/ss/balls3.css");
+@import url("https://raw.githack.com/Snapperito/Settings-Icons/main/source.css");
+
+:root {
+/* Comfy User Buttons Var */
+--user-buttons-width:72px;
+--user-buttons-left:0px;
+--user-buttons-bottom:0px;
+/* Friend Grid Var */
+--friendblockheight: 120px; 
+/* Mention color */
+--mention-color: inherit;
+/* Status color */
+--iddle: #FAA61A;
+--dnd: #F04747;
+--offline: #747F8D;
+/* Avatar roundess */
+--avatar-radius: 100%;
+/* Status roundness */
+--status-radius: 100%;
+/* Server roundess */
+--server-radius: 100%;
+}
+
+/* code block color fix */
+.vpc-shiki {background-color:#12121a!important;}
+
+/* fix new server having black text */
+.container-1CE3eW div div div h3 {
+  color: white;
+}
+
+/* no idea why pop out user avys arent showing but im going to adjust them a bit
+   so i can like,, still see the hover area,,, */
+.avatarStack-2Dr8S9 .avatar-VxgULZ { opacity: 1 !important; }
+
+/* turns out the user volume percent being broken was a z-index issue */
+.layer-v9HyYc.disabledPointerEvents-1ptgTB {
+	z-index: 5000;
+  pointer-events: none;
+}
+
+/* fix fucking channel accessibility and space out the shit i guess */
+/* WHY IS ALL MY SHIT BREAKING */
+.horizontal-1ae9ci .flex-1xMQg5.flex-1O1GKY.horizontal-1ae9ci.horizontal-2EEEnY.flex-1O1GKY.directionRow-3v3tfG.justifyStart-2NDFzi.alignCenter-1dQNNs.noWrap-3jynv6.BDFDB_undefined-T2GcQx .BDFDB_undefined-ujj_lj.top-28JiJ- {
+  display: flex;
+  justify-content: space-around;
+}
+.horizontal-1ae9ci .flex-1xMQg5.flex-1O1GKY.horizontal-1ae9ci.horizontal-2EEEnY.flex-1O1GKY.directionRow-3v3tfG.justifyStart-2NDFzi.alignCenter-1dQNNs.noWrap-3jynv6.BDFDB_undefined-T2GcQx .BDFDB_undefined-ujj_lj.top-28JiJ- .BDFDB_undefined-XgGA4A.item-PXvHYJ.themed-OHr7kt {
+  display: flex;
+  justify-content: space-around;
+}
+div[tab="Permitted"] div {
+  display:flex;
+  align-items:center;
+  color:lightblue;
+}
+
+/* why do usernames have a scrollbar now??? whatever, fix that */
+span.headerTagUsername-1rEZ3Z {
+  overflow-y:hidden!important;
+}
+/* inb4 this is some stupid obscure shit with my plugins/css who fucking cares
+i'm fixing it anyway and releasing the snippet */
+/* also fix the width because for some reason this is now an issue */
+.userPopout-3XzG_A {
+  width:500px!important;
+}
+/* center premium banners or do something with them to look less stupid */
+.headerNormal-1l1Znk .profileBannerPremium-35utuo {
+  margin:auto;
+}
+
+/* night theme exclusive tweaks dont include in above snippet */
+.header-4zuFdR {
+  background-color: #1e212b;
+}
+.topSection-y3p-_D, .aboutMeSection---MkQa, .headerNormal-1mX3KY, .headerTop-2cWpdB {
+  background-color: #12121a;
+}
+.body-3HBlXn, .body-r6_QPy, .footer-1N3bR3 {
+  background-color: #161721;
+}
+.headerFill-adLl4x, .activity-1ythUs {
+  background-color: #1e212b !important;
+  background: #1e212b !important;
+}
+#app-mount .activityUserPopout-2yItg2, #app-mount .activityProfile-2bJRaP {
+    background: #1e212b !important;
+    /*box-shadow: var(--activity-box-shadow) var(--activity-drop-shadow) !important;
+    border-radius: var(--activity-border-radius) !important;*/
+    padding: 10px;
+    margin: 0 9px 10px 6px;
+}
+
+/* holy shit this is fucky; boost modal */
+.theme-dark .perksModal-fSYqOq {
+  	width: 75%;
+    height: 91%;
+    display: block;
+    margin: auto auto;
+    border-radius: 5px;
+    margin-bottom: 120px;
+    top: 60px;
+    position: relative;
+}
+.closeContent-I3JbQJ, .closeWrapper-9ScmSq {
+  top:90px;
+  right:100px;
+  display:block;
+  position:fixed; 
+}
+
+/* lets try something with user spacing */
+.voiceUsers-2V7vuh {
+  width:100%; /* probably not needed but i'm adding this for good measure */
+  display: flex;
+  justify-content: space-evenly;
+  grid-template-columns: none; /* also for good measure */
+}
+
+/* round off voice activity buttons */
+.actionButtons-14eAc_ button.button-1YfofB {
+  border-radius:512px;
+}
+/* krisp and disconnect buttons */
+.container-1giJp5 .horizontal-2EEEnY .horizontal-1ae9ci button.button-14-BFJ {
+  border-radius: 512px;
+}
+/* invite button rounding */
+.bottomControls-lIJyYL .horizontal-1ae9ci button.leftTrayIcon-vpfJk5 {
+  border-radius: 512px;
+}
+
+/* round off buttons in go live popup mainly; but might affect other buttons */
+.footer-2gL1pp button.button-38aScr {
+  border-radius: 512px;
+}
+/* change button */
+.card-2Mz_4z .changeButton-278ZT6 {
+  border-radius: 512px;
+}
+/* file upload buttons */
+.footer-3mqk7D .hasSpoilers-1IRtQC button.button-38aScr {
+  border-radius: 512px;
+}
+
+/* differentiate logged edits from the actual message */
+.theme-dark .markup-2BOw-j.ml2-edited .ml2-edited:first-of-type {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.theme-dark .markup-2BOw-j.ml2-edited .ml2-edited {
+  background: linear-gradient(90deg, #12121aaa 0%, rgba(0,0,47,0) 35%, rgba(0,51,61,0) 100%);
+  padding: 3px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+.theme-dark .markup-2BOw-j.ml2-edited .ml2-edited:last-of-type {
+  border-bottom: 2px solid #4f545c;
+}
+
+/* fix online count having 2 lines */
+.onlineFriends-counter {
+  font-size: 9px!important;
+}
+
+/* move mentions thing above cozy user area */
+.unreadMentionsIndicatorBottom-2mDYbI {
+  transform: translatey(-232px);
+}
+
+/* fix audio embed width to not cut off names of files 
+.wrapperAudio-1jDe0Q {
+  width:auto!important;
+  min-width: 400px;
+} */
+
+/* audio filename scroll */
+.wrapperAudio-1jDe0Q {
+  width:400px!important;
+}
+/* slide keyframes */
+@keyframes marquee{
+	0% {
+    	transform: translate(0, 0);
+	}
+	100% {
+    	transform: translate(-100%, 0);
+	}
+}
+/* apply the animation */
+.metadataContent-3c_ZXw .metadataName-14STf-:hover {
+	display: inline-block;
+  padding-left: 100%;
+  animation: marquee 8s linear infinite; /* adjust time as needed */
+}
+
+/* 12121a */
+.header-1VS4tm, .chatHeaderBar-4vZS1x, #app-mount .userPopout-3XzG_A .header-2BwW8b, #app-mount .root-SR8cQa > div:first-child {background-color:#12121a!important;}
+.vpc-shiki.vpc-shiki-plain {background-color:#12121a!important;}
+.popout-APcvZm, .theme-dark .popout-6p6fkZ {backdrop-filter:blur(5px)!important; background-color:rgba(0,0,0,0.6)!important; opacity:1!important;}
+.theme-dark .tooltipPrimary-1d1ph4, .theme-light .tooltipPrimary-1d1ph4 {backdrop-filter:blur(2px)!important; background-color:rgba(0,0,0,0.4)!important;}
+.scrollableContainer-2NUZem { border-radius: 25px; }
+.panels-j1Uci_ > .container-3baos1 > .flex-1xMQg5 > .button-14-BFJ {
+  background-color: #161721;
+  border-radius: 9999999px;
+}
+.panels-j1Uci_ > .container-3baos1 > .flex-1xMQg5 > .button-14-BFJ:hover {
+  background-color: #1a1b26;
+  border-radius: 9999999px;
+}
+.powercord-product .metadata .license {
+    margin-right: 30px !important;
+  	margin-left: 0 !important;
+}
+.scroller-zPkAnE {
+    margin-right: 0px !important;
+}
+.scroller-3BxosC {
+  	padding-right: 0px !important;
+}
+.item-1tOPte.labelContainer-1BLJti.colorDefault-2K3EoJ.focused-3afm-j { left: 0 !important; }
+.connectedAccount-36nQx7 {
+    padding: 8px 20px 8px 8px !important;
+}
+.toolsContainer-1edPuj {
+  	position:fixed;
+  	top:82px;
+  	right:5%;
+}
+.toolsContainer-1edPuj .tools-3-3s-N {
+  	background-color: #1a1b26;
+  	padding: 24px;
+  	position: absolute;
+  	top:0;
+  	border-radius: 5px;
+}
+/* * {
+  font-family: Comic Sans MS !important;
+} */
+.imageWrapper-2p5ogY img {
+  image-rendering: pixelated !important;
+}
+.grid-1nZz7S {
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 0px 4px 4px 0px;
+}
+.lowerBadge-29hYVK .numberBadge-2s8kKX.base-PmTxvP.baseShapeRound-1Mm1YW {
+	background-color: #1a1b26 !important;
+	border: 2px solid #8488BC;
+  height: 2px;
+}
+.wrapper-232cHJ {
+  border-radius: 3px;
+  border: 2px solid #8488BC;
+  background-color: #161721;
+  -webkit-box-shadow: 0 0px 0 rgba(0,0,0,.25), inset 0 0px 0 hsla(0,0%,100%,.15);
+  box-shadow: 0 0px 0 rgba(0,0,0,.25), inset 0 0px 0 hsla(0,0%,100%,.15);
+  text-shadow: 0 0px 0 rgba(0,0,0,.25);
+}
+.mention-1f5kbO {
+	background-color: #1a1b26;
+  border: 2px solid #8488BC;
+  border-radius: 25px;
+  height: 20px;
+  margin-top: 2px;
+}
+.mention-1f5kbO:active {
+  background-color: #4e3341;
+}
+.children-3rEycc .mentionsBadge-3tC7Mi.iconBase-3LOlfs .numberBadge-2s8kKX.base-PmTxvP.baseShapeRound-1Mm1YW {
+  background-color: #1a1b26 !important;
+  border: 2px solid #8488BC;
+  height: 20px !important;
+  width: 20px !important;
+  border-radius: 25px;
+}
+.layout-2DM8Md .children-gzQq2t .numberBadge-2s8kKX.base-PmTxvP.baseShapeRound-1Mm1YW {
+  background-color: #1a1b26 !important;
+  border: 2px solid #8488BC;
+  height: 18px !important;
+  width: 18px !important;
+  border-radius: 25px;
+}
+.item-3HknzM.item-PXvHYJ.themed-OHr7kt .badge-1Skb69.numberBadge-2s8kKX.base-PmTxvP.baseShapeRound-1Mm1YW {
+  background-color: #1a1b26 !important;
+  border: 2px solid #8488BC;
+  height: 18px !important;
+  width: 18px !important;
+  border-radius: 25px;
+}
+.channelTextArea-rNsIhG.channelTextArea-2VhZ6z .scrollableContainer-2NUZem.webkit-HjD9Er {
+  border-radius: 25px;
+}
+.image-tools-lens {
+  background-color: #161721;
+  image-rendering: pixelated;
+  -webkit-box-shadow: 0px 0px 50px 10px #000000; 
+	box-shadow: 0px 0px 50px 10px #000000;
+  border: 2px solid white!important;
+}
+.BIV-zoom-lens {
+    overflow: hidden;
+  /*background-color: #161721 !important;*/
+  backdrop-filter:blur(5px)!important;
+  background-color:rgba(0,0,0,0.6)!important;
+  opacity:1!important;
+  image-rendering: pixelated;
+  -webkit-box-shadow: 0px 0px 50px 10px #000000; 
+	box-shadow: 0px 0px 50px 10px #000000;
+  border: 2px solid white!important;
+}
+.wrapper-3Z-vWm .container-3PXSwK {
+  border-radius: 4px;
+}
+.wrapper-3Z-vWm .container-3PXSwK .progress-1IcQ3A {
+  border-radius: 5px;
+}
+.video--KPXCT .root-217Brm, .wrapper-2qzCYF.minimum-28Z35l .root-217Brm {
+  background-color: #161721 !important;
+}
+button.vpc-shiki-copy-btn {
+  transition: none !important;
+}
+.editingContainer-3s5xK0 .overlay-4k_Q4- {
+	border: 1px solid #fff !important;
+}
+.userPopout-3XzG_A .body-3iLsc4 {
+	max-height: 250px !important;
+}
+/*.headerSpotify-zpWxgT.header-2BwW8b.size16-14cGz5 .flex-1xMQg5.flex-1O1GKY.vertical-V37hAW.flex-1O1GKY {
+  background-color: #000000b8;
+}*/
+.styleFlexible-wGDiIL {
+    min-width: 320px;
+    max-width: 320px;
+}
+.layerContainer-yqaFcK .backdrop-1wrmKB.withLayer-RoELSG {
+  background-color: rgba(0, 0, 0, 0.6)!important;
+  backdrop-filter: blur(5px);
+}
+.uploadArea-3QgLtW {
+  background-color: rgba(0, 0, 0, 0.6)!important;
+  backdrop-filter: blur(5px);
+}
+.backdrop-1wrmKB { backdrop-filter:blur(5px); background-color:rgba(0,0,0,0.6)!important; opacity:1!important;}
+.chat-3bRxxu {
+  background-color: #1a1b26 !important;
+}
+
+/* no powercord toast anims dear fuck */
+.powercord-toast {
+    animation: 0s !important;
+}
+	
+.powercord-toast .leaving {
+    animation: 0s !important;
+}
+
+/* prevent the funny buttons from being clicked */
+.contentColumn-2hrIYH div .marginTop40-i-78cZ:nth-of-type(5) {
+  display:none;
+}
+
+/**
+ * Snippet from #css-snippets applied the Jun 1, 2021 at 1:37:08 PM
+ * Created by DoggyBootsy#1333 (515780151791976453)
+ * Snippet ID: 849162582535438339
+ */
+.platform-win .powerclock:not(.sticky){
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,5px);
+    padding: 0;
+    font-size: 1rem;
+    z-index: 3001;
+    padding: 0;
+}
+.platform-win .layer-3QrUeG:first-child:not(:last-child){
+    opacity: 1 !important;
+    transform: none !important;
+    will-change: unset;
+    z-index: 1;
+}
+.platform-win .layer-3QrUeG:last-child:not(:first-child){
+    will-change: unset;
+    z-index: 100;
+}
+html:not(.platform-win) .powerclock:not(.sticky){
+    position: fixed;
+    top: 0;
+    right: 0;
+    transform: translate(-50%,19px);
+    padding: 0;
+    font-size: 1rem;
+    z-index: 3001;
+    padding: 0;
+}
+.guilds-1SWlCJ .scroller-1Bvpku {
+    contain: unset;
+}
+html:not(.platform-win) .layer-3QrUeG:first-child:not(:last-child){
+    opacity: 1 !important;
+    transform: none !important;
+    will-change: unset;
+}
+html:not(.platform-win) .layer-3QrUeG:last-child:not(:first-child){
+    will-change: unset;
+    z-index: 100;
+}
+html:not(.platform-win) .toolbar-1t6TWx{
+  margin-right: 64px;
+}
+/** 849162582535438339 */
+
+/**
+ * Snippet from #css-snippets applied the Jun 1, 2021 at 1:42:44 PM
+ * Created by DoggyBootsy#1333 (515780151791976453)
+ * Snippet ID: 848662266618707968
+ */
+.iconWrapper-2OrFZ1 path[d="M19 3H4.99C3.88 3 3.01 3.89 3.01 5L3 19C3 20.1 3.88 21 4.99 21H19C20.1 21 21 20.1 21 19V5C21 3.89 20.1 3 19 3ZM19 15H15C15 16.66 13.65 18 12 18C10.35 18 9 16.66 9 15H4.99V5H19V15Z"]{
+  d: path("M 12 2 C 6.486 2 2 6.486 2 12 C 2 17.515 6.486 22 12 22 C 14.039 22 15.993 21.398 17.652 20.259 L 16.521 18.611 C 15.195 19.519 13.633 20 12 20 C 7.589 20 4 16.411 4 12 C 4 7.589 7.589 4 12 4 C 16.411 4 20 7.589 20 12 V 12.782 C 20 14.17 19.402 15 18.4 15 L 18.398 15.018 C 18.338 15.005 18.273 15 18.209 15 H 18 C 17.437 15 16.6 14.182 16.6 13.631 V 12 C 16.6 9.464 14.537 7.4 12 7.4 C 9.463 7.4 7.4 9.463 7.4 12 C 7.4 14.537 9.463 16.6 12 16.6 C 13.234 16.6 14.35 16.106 15.177 15.313 C 15.826 16.269 16.93 17 18 17 L 18.002 16.981 C 18.064 16.994 18.129 17 18.195 17 H 18.4 C 20.552 17 22 15.306 22 12.782 V 12 C 22 6.486 17.514 2 12 2 Z M 12 14.599 C 10.566 14.599 9.4 13.433 9.4 11.999 C 9.4 10.565 10.566 9.399 12 9.399 C 13.434 9.399 14.6 10.565 14.6 11.999 C 14.6 13.433 13.434 14.599 12 14.599 Z");
+}
+/** 848662266618707968 */
+
+/**
+ * Snippet from #css-snippets applied the Jun 2, 2021 at 4:30:31 PM
+ * Created by Freeplay#5676 (158296466119458816)
+ * Snippet ID: 849359471179202632
+ */
+#private-channels > [class*="content-"] {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+#private-channels > [class*="content-"] > a:not([href*="/channels/@me/"]) {
+    flex-grow: 1;
+    margin-top: 8px !important; 
+    margin-left: 0;
+}
+#private-channels > [class*="content-"] > a:not([href*="/channels/@me/"]):first-of-type {
+    margin-left: 8px !important;
+}
+#private-channels > [class*="content-"] > a:not([href*="/channels/@me/"]) [class*="layout-"] {
+    justify-content: center;
+    padding: 0 !important;
+}
+#private-channels > [class*="content-"] > a:not([href*="/channels/@me/"]) [class*="avatar-"] {
+    margin: 0 !important;
+}
+#private-channels > [class*="content-"] > a:not([href*="/channels/@me/"]) [class*="content-"] {
+    display: none;
+}
+#private-channels > [class*="content-"] > a:not([href*="/channels/@me/"]) [class*="children-"] {
+    position: absolute;
+    transform: translate(4px, 8px);
+    box-shadow: 0 0 0 3px var(--background-secondary);
+    border-radius: 100px;
+}
+#private-channels > [class*="content-"] > h2 {
+    width: 100%;
+}
+#private-channels > [class*="content-"] > a[href*="/channels/@me/"] {
+    width: 100%;
+}
+/** 849359471179202632 */
+
+/**
+ * Snippet from #css-snippets applied the Jun 8, 2021 at 3:11:20 PM
+ * Created by 🧡🍺Hυʂƙ🍺🧡#0266 (634168893644210186)
+ * Snippet ID: 851894991227584582
+ */
+.none-2Eo-qx {
+    scrollbar-width: auto !important;
+    overflow: scroll !important;
+}
+
+.none-2Eo-qx:hover::-webkit-scrollbar {
+    width: 0.2em !important;
+    border-radius: 25px;
+    height: 0px !important;
+    background: transparent !important;
+}
+
+.none-2Eo-qx:hover::-webkit-scrollbar-thumb {
+    background: #2e424b;
+    border-radius: 25px;
+}
+/** 851894991227584582 */
+
+/**
+ * Snippet from #css-snippets applied the Jun 15, 2021 at 3:46:16 AM
+ * Created by 🧡🍺Hυʂƙ🍺🧡#0266 (634168893644210186)
+ * Snippet ID: 852195510932733973
+ */
+.platform-win .maximized [aria-label="Maximize"] {
+    background-repeat: no-repeat;
+    background-position: center;
+    color: transparent;
+}
+
+.platform-win .maximized [aria-label="Maximize"]:before {
+    content: " ";
+    -webkit-mask: url('https://kckarnige.github.io/improved-ui/res/restore.svg');
+    background-repeat: no-repeat;
+    position: fixed;
+    color: var(--interactive-normal);
+    background-color: currentColor;
+    height: 12px;
+    width: 12px;
+}
+/** 852195510932733973 */
