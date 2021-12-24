@@ -172,7 +172,7 @@ i'm fixing it anyway and releasing the snippet */
 
 /* move mentions thing above cozy user area */
 .unreadMentionsIndicatorBottom-2mDYbI {
-  transform: translatey(-232px);
+  transform: translatey(-194px);
 }
 
 /* fix audio embed width to not cut off names of files 
