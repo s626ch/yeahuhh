@@ -479,7 +479,7 @@ html:not(.platform-win) .toolbar-1t6TWx{
  */
 .none-2Eo-qx {
     scrollbar-width: auto !important;
-    overflow: scroll !important;
+    /*overflow: scroll !important;*/
 }
 
 .none-2Eo-qx:hover::-webkit-scrollbar {
